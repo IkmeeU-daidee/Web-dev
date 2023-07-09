@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>GOODGURU</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      place-items: center;
+      background-color: #f5f0f0;
+    }
+
+    .text-container {
+      display: inline-block;
+      margin-top: 0px;
+    }
+
+    .text-container span {
+      display: inline-block;
+      font-size: 72px;
+      font-family: 'Roboto', sans-serif;
+      text-transform: uppercase;
+      color: #c26060;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .text-container span:hover {
+      transform: scale(1.1);
+    }
+
+    .hamburger {
+  cursor: pointer;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  /* The size of the SVG defines the overall size */
+  height: 3em;
+  /* Define the transition for transforming the SVG */
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: #c26060;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  /* Define the transition for transforming the Stroke */
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+
+    .options {
+      text-align: center;
+    }
+
+    .options a {
+      display: inline-block;
+      margin: 5px;
+      padding: 5px 10px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      text-decoration: none;
+      color: #c26060;
+      border: 1px solid #c26060;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .options a:hover {
+      background-color: #c26060;
+      color: #fff;
+    }
+
+    .menu-frame {
+      border: 1px solid #c26060;
+      border-radius: 0px;
+      padding: 10px;
+      display: inline-block;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      background-color: #f5f0f0;
+      padding: 20px 0;
+      box-shadow: 0px -2px 4px rgba(81, 58, 58, 0.2);
+    }
+
+    .footer-icon {
+      font-size: 24px;
+      color: #c26060;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .footer-icon:hover {
+      color: #b54f4f;
+    }
+
+  
+
+  </style>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="text-container">
+    <span>G</span>
+    <span>O</span>
+    <span>O</span>
+    <span>D</span>
+    <span>G</span>
+    <span>U</span>
+    <span>R</span>
+    <span>U</span>
+  </div>
+
+  <label class="hamburger">
+    <input type="checkbox">
+    <svg viewBox="0 0 32 32">
+      <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+      <path class="line" d="M7 16 27 16"></path>
+    </svg>
+  </label>
+
+
+  <div class="options menu-frame">
+    <a href="#">ทั้งหมด</a>
+    <a href="#">บิวตี้</a>
+    <a href="#">แฟชั่น</a>
+    <a href="#">การตกแต่งบ้าน</a>
+    <a href="#">สกินแคร์</a>
+    <a href="#">สูตรอาหาร</a>
+    <a href="#">ร้านอาหาร</a>
+    <a href="#">การท่องเที่ยว</a>
+    <a href="#">สุขภาพ</a>
+    <a href="#">ถ่ายรูป</a>
+    <a href="#">ลดน้ำหนัก</a>
+    <a href="#">การพัฒนาตน</a>
+    <a href="#">เทคโนโลยี</a>
+    <a href="#">การเงิน</a>
+    <a href="#">ความสัมพันธ์</a>
+    <a href="#">ความบันเทิง</a>
+    <a href="#">ครอบครัว</a>
+    <a href="#">สัตว์เลี้ยง</a>
+  </div>
+
+  <div class="footer">
+    <i class="fas fa-home footer-icon"></i>
+    <i class="fas fa-search footer-icon"></i>
+    <i class="fas fa-user-circle footer-icon"></i>
+  </div>
+
+</body>
+
+</html>
