@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>GOODGURU</title>
   <style>
+    /* existing CSS styles */
     body {
       margin: 0;
       padding: 0;
@@ -12,7 +13,7 @@
       place-items: center;
       background-color: #f5f0f0;
     }
-
+    /* หัวข้อ */
     .text-container {
       display: inline-block;
       margin-top: 0px;
@@ -27,19 +28,20 @@
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
       padding: 20px;
       transition: transform 0.3s ease;
+      transform: perspective(600px) rotateY(20deg);
     }
 
     .text-container span:hover {
-      transform: scale(1.1);
+      transform: perspective(600px) rotateY(-20deg) scale(1.1);
     }
 
     .hamburger {
-  cursor: pointer;
-}
+      cursor: pointer;
+    }
 
-.hamburger input {
-  display: none;
-}
+    .hamburger input {
+      display: none;
+    }
 
 .hamburger svg {
   /* The size of the SVG defines the overall size */
@@ -72,6 +74,28 @@
   stroke-dashoffset: -32.42;
 }
 
+.hamburger {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+}
+
+.menu-options {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  background: #f0f0f0;
+  padding: 10px;
+  list-style: none;
+  display: none;
+}
+
+.hamburger input:checked + svg ~ .menu-options {
+  display: block;
+}
 
     .options {
       text-align: center;
@@ -102,6 +126,7 @@
       display: inline-block;
     }
 
+    /* CSS for the footer */
     .footer {
       position: fixed;
       bottom: 0;
@@ -125,10 +150,9 @@
       color: #b54f4f;
     }
 
-  
-
   </style>
 
+  <!-- Corrected Font Awesome script tag -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </head>
@@ -151,6 +175,11 @@
       <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
       <path class="line" d="M7 16 27 16"></path>
     </svg>
+    <ul class="menu-options">
+      <li>Option 1</li>
+      <li>Option 2</li>
+      <li>Option 3</li>
+    </ul>
   </label>
 
 
@@ -173,12 +202,11 @@
     <a href="#">ความบันเทิง</a>
     <a href="#">ครอบครัว</a>
     <a href="#">สัตว์เลี้ยง</a>
-  </div>
-
+  
   <div class="footer">
-    <i class="fas fa-home footer-icon"></i>
-    <i class="fas fa-search footer-icon"></i>
-    <i class="fas fa-user-circle footer-icon"></i>
+    <i class="fas fa-home footer-icon"></i>             <!-- Home icon -->
+    <i class="fas fa-search footer-icon"></i>           <!-- Search icon -->
+    <i class="fas fa-user-circle footer-icon"></i>      <!-- User circle icon -->
   </div>
 
 </body>
