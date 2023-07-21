@@ -2,12 +2,16 @@
 <html>
 
 <head>
+  <!-- Meta information -->
   <meta charset="UTF-8">
   <title>GOODGURU</title>
+
+  <!-- Link to the Font Awesome CSS library -->
   <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   
   <style>
     /* existing CSS styles */
+    /* Setting up body styles */
     body {
       margin: 0;
       padding: 0;
@@ -15,7 +19,9 @@
       place-items: center;
       background-color: #f5f0f0; 
     }
+
     /* หัวข้อ */
+    /* Styles for the rotating text */
     .text-container {
       display: inline-block;
       margin-top: 0px;
@@ -38,6 +44,7 @@
     }
 
     /*ตัวเลือก*/
+    /* Styles for the hamburger menu toggle */
     .hamburger {
       cursor: pointer;
     }
@@ -85,7 +92,7 @@
     }
     
 
-    /* position the menu options as a sidebar */
+    /* Styles for the sidebar menu options */
     .menu-options {
       font-family: 'Roboto', sans-serif;
       position: fixed;
@@ -113,6 +120,7 @@
       transform: translateX(0);
     }
 
+    /* Styles for the options within the sidebar menu */
     .options {
       text-align: center;
     }
@@ -168,33 +176,10 @@
 
   </style>
 
-  <!-- Corrected Font Awesome script tag -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous">
-
-  /* handle the hamburger menu toggle */
-  const checkbox = document.querySelector('.hamburger input');
-  checkbox.addEventListener('change', function() {
-    const menuOptions = document.querySelector('.menu-options');
-    if (this.checked) {
-      menuOptions.style.display = 'block';
-    } else {
-      menuOptions.style.display = 'none';
-    }
-  });
-
-  const searchIcon = document.getElementById('search-icon');
-  searchIcon.addEventListener('click', function(event) {
-    event.preventDefault();
-    const searchTerm = prompt('Enter your search term:');
-    if (searchTerm) {
-      window.location.href = 'search.html?q=' + encodeURIComponent(searchTerm);
-    }
-  });
-  </script>
-
 </head>
 
 <body>
+  <!-- Rotating text container -->
   <div class="text-container">
     <span>G</span>
     <span>O</span>
@@ -206,6 +191,7 @@
     <span>U</span>
   </div>
 
+  <!-- Hamburger menu toggle -->
   <label class="hamburger">
     <input type="checkbox">
     <svg viewBox="0 0 32 32">
@@ -229,6 +215,7 @@
     </ul>
   </label>
 
+  <!-- Footer with icons -->
   <div class="footer">
     <i class="fas fa-home footer-icon"></i>             <!-- Home icon -->
   
