@@ -7,7 +7,7 @@
   <title>GOODGURU</title>
 
   <!-- Link to the Font Awesome CSS library -->
-  <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   
   <style>
     /* existing CSS styles */
@@ -99,9 +99,9 @@
       top: 0;
       left: 0;
       height: 100vh;
-      width: 200px;
+      width: 180px;
       background: #c26060;
-      padding: 60px 10px 10px; /* Added padding-top */
+      padding: 30px; /* Added padding-top */
       list-style: none;
       display: none;
       transition: transform 0.3s ease;
@@ -159,15 +159,22 @@
       display: flex;
       justify-content: space-around;
       background-color: #f5f0f0;
-      padding: 20px 0;
+      padding: 10px 0;
       box-shadow: 0px -2px 4px rgba(81, 58, 58, 0.2);
     }
 
     .footer-icon {
       font-size: 24px;
+      line-height: 24px;
+      display: block;
+      width: 24px;
+      height: 24px;
       color: #c26060;
       cursor: pointer;
       transition: color 0.3s ease;
+
+      /* Set Font Awesome font-family */
+      font-family: "Font Awesome 5 Free";
     }
 
     .footer-icon:hover {
@@ -177,6 +184,7 @@
   </style>
 
 </head>
+
 
 <body>
   <!-- Rotating text container -->
@@ -200,29 +208,28 @@
     </svg>
     <ul class="menu-options">
       <!-- Menu options -->
-      <li>All</li>
-      <li>Fashion</li>
-      <li>Beauty</li>
-      <li>Skincare</li>
-      <li>Healthy</li>
-      <li>Travel</li>
-      <li>Foods</li>
-      <li>Technology</li>
-      <li>Family</li>
-      <li>Entertain</li>
-      <li>Relationships</li>
-      <li>Pets</li>
+      <span>หมวดหมู่</span></div>
+            <ul class="content">
+              <li><a href="/feed/foryou?region=th">สำหรับคุณ</a></li>
+              <li><a href="/feed/beauty?region=th">บิวตี้</a></li>
+              <li><a href="/feed/fashion?region=th">แฟชั่น</a></li>
+              <li><a href="/feed/food?region=th">อาหาร</a></li>
+              <li><a href="/feed/undefined?region=th">สกินแคร์</a></li>
+              <li><a href="/feed/lifestyle?region=th">การตกเเต่งบ้าน</a></li>
+              <li><a href="/feed/travel?region=th">การท่องเที่ยว</a></li>
+              <li><a href="/feed/health?region=th">สุขภาพ</a></li>
+              <li><a href="/feed/undefined?region=th">ถ่ายรูป</a></li>
+              <li><a href="/feed/undefined?region=th">การพัฒนาตน</a></li>
+              <li><a href="/feed/pet?region=th">สัตว์เลี้ยง</a></li></ul</li>
+              
     </ul>
   </label>
 
   <!-- Footer with icons -->
   <div class="footer">
     <i class="fas fa-home footer-icon"></i>             <!-- Home icon -->
-  
-  <a href="#" id="search-icon">  
     <i class="fas fa-search footer-icon"></i>           <!-- Search icon -->
     <i class="fas fa-user-circle footer-icon"></i>      <!-- User circle icon -->
   </div>
-
-
+</body>
 </html>
