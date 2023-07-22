@@ -6,9 +6,10 @@
   <meta charset="UTF-8">
   <title>GOODGURU</title>
 
-  <!-- Link to the Font Awesome CSS library -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-  
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
   <style>
     /* existing CSS styles */
     /* Setting up body styles */
@@ -59,7 +60,7 @@
     /* Define the transition for transforming the SVG */
       transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+
     .line {
       fill: none;
       stroke: #c26060;
@@ -90,7 +91,6 @@
       left: 0px;
       z-index: 9999;
     }
-    
 
     /* Styles for the sidebar menu options */
     .menu-options {
@@ -99,7 +99,7 @@
       top: 0;
       left: 0;
       height: 100vh;
-      width: 180px;
+      width: 200px;
       background: #c26060;
       padding: 30px; /* Added padding-top */
       list-style: none;
@@ -120,66 +120,84 @@
       transform: translateX(0);
     }
 
-    /* Styles for the options within the sidebar menu */
-    .options {
+    .profile-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 30px;
+      color: #c26060;
+      cursor: pointer;
+    }
+
+    /* Modal styles */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+    }
+
+    /* Styles for the modern modal form */
+    .modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #ffffff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      display: none;
+    }
+
+    .modal h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
       text-align: center;
     }
 
-    .options a {
-      display: inline-block;
-      margin: 5px;
-      padding: 5px 10px;
-      font-family: 'Roboto', sans-serif;
-      font-size: 18px;
-      text-decoration: none;
-      color: #c26060;
-      border: 1px solid #c26060;
-      border-radius: 20px;
-      transition: background-color 0.3s ease;
+    .modal form {
+      display: flex;
+      flex-direction: column;
     }
 
-    .options a:hover {
+    .modal label {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .modal input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    .modal button {
       background-color: #c26060;
       color: #fff;
-    }
-
-    .menu-frame {
-      border: 1px solid #c26060;
-      border-radius: 0px;
-      padding: 10px;
-      display: inline-block;
-    }
-
-    /* CSS for the footer */
-    .footer {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      background-color: #f5f0f0;
-      padding: 10px 0;
-      box-shadow: 0px -2px 4px rgba(81, 58, 58, 0.2);
-    }
-
-    .footer-icon {
-      font-size: 24px;
-      line-height: 24px;
-      display: block;
-      width: 24px;
-      height: 24px;
-      color: #c26060;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      font-size: 16px;
       cursor: pointer;
-      transition: color 0.3s ease;
-
-      /* Set Font Awesome font-family */
-      font-family: "Font Awesome 5 Free";
     }
 
-    .footer-icon:hover {
-      color: #b54f4f;
-    }
+    .modal button:hover {
+      background-color: #d14c4c;
+    }    
+
+    
+
+    
+    
+    
+    
 
   </style>
 
@@ -199,6 +217,37 @@
     <span>U</span>
   </div>
 
+  <!-- Profile icon -->
+  <!-- ตั้งค่าให้โปรไฟล์สามารถคลิกได้-->
+  <i class="fas fa-user profile-icon" onclick="openModal()"></i>
+
+  <!-- Modal and Form -->
+  <div class="modal-overlay" onclick="closeModal()"></div>
+  <div class="modal">
+    <h3>User Profile</h3>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script>
+    // Function to open the modal
+    function openModal() {
+      document.querySelector(".modal-overlay").style.display = "block";
+      document.querySelector(".modal").style.display = "block";
+    }
+
+    // Function to close the modal
+    function closeModal() {
+      document.querySelector(".modal-overlay").style.display = "none";
+      document.querySelector(".modal").style.display = "none";
+    }
+  </script>
+
   <!-- Hamburger menu toggle -->
   <label class="hamburger">
     <input type="checkbox">
@@ -208,7 +257,7 @@
     </svg>
     <ul class="menu-options">
       <!-- Menu options -->
-      <span>หมวดหมู่</span></div>
+      <li><span>หมวดหมู่</span></li>
             <ul class="content">
               <li><a href="/feed/foryou?region=th">สำหรับคุณ</a></li>
               <li><a href="/feed/beauty?region=th">บิวตี้</a></li>
@@ -224,14 +273,7 @@
               
     </ul>
   </label>
-
-  <!-- Footer with icons -->
-<!-- Footer with icons -->
-<div class="footer">
-  <i class="fa fa-home"></i>             <!-- Home icon -->
-  <i class="fa fa-search"></i>           <!-- Search icon -->
-  <i class="fa fa-user-circle"></i>      <!-- User circle icon -->
-</div>
-
+  
+  
 </body>
 </html>
