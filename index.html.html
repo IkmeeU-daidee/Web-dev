@@ -3,18 +3,24 @@
 
 <head>
   <!-- Meta information -->
-  <meta charset="UTF-8"
-  <mwta name="viewport" content="width"=device-width, initial-scale="1.0"
-  <title>GOODGURU</title>
+  <meta charset="UTF-8">     <!--กำหนดชุดอักขระ (character set) ที่ใช้ในเอกสาร เช่น UTF-8 ที่สามารถรองรับอักขระทุกภาษา-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>GOODGURU</title>   <!--กำหนดการแสดงผลของหน้าเว็บบนอุปกรณ์แบบ responsive โดยค่าเริ่มต้นจะใช้ขนาดเริ่มต้น (initial-scale) ที่ 1.0 และปรับเปลี่ยนความกว้างให้พอดีกับอุปกรณ์ (device-width)-->
+  <meta name="description" content="คำอธิบายเว็บไซต์">   <!--ระบุคำอธิบายสั้น ๆ เกี่ยวกับเว็บไซต์ เว็บเบราว์เซอร์สามารถแสดงข้อความนี้ในผลการค้นหา-->
+  <meta name="keywords" content="คีย์เวิร์ด, เพื่อค้นหา">   <!--ระบุคีย์เวิร์ดที่เกี่ยวข้องกับเว็บไซต์ เป็นข้อมูลที่ไม่ค่อยได้ใช้ในการค้นหาในเว็บเบราว์เซอร์รุ่นใหม่-->
+  <meta name="author" content="Hikmah UDD">   <!--ระบุชื่อผู้เขียนหรือเจ้าของเว็บไซต์-->
+  <meta name="robots" content="index,follow">   <!--ระบุความสามารถของเว็บเบราว์เซอร์และเครื่องมือค้นหาที่จะเข้าถึงเว็บไซต์ (index: เครื่องมือค้นหาสามารถเพิ่มเว็บไซต์ลงในดัชนีได้, follow: เครื่องมือค้นหาสามารถตามลิงก์ภายในเว็บไซต์ได้)-->
+  <meta name="og:title" content="ชื่อเว็บไซต์">   <!--ใช้ในการกำหนดชื่อของเว็บไซต์สำหรับการแชร์บนโซเชียลมีเดีย (Open Graph Protocol)-->
+  <meta name="og:image" content="url_รูปภาพ.jpg">   <!--ใช้ในการกำหนดรูปภาพที่จะแสดงเมื่อเว็บไซต์ถูกแชร์บนโซเชียลมีเดีย (Open Graph Protocol)-->
 
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.css">  <!-- to connect css style-->
 
 </head>
 
 
 <body>
+  <header class="fixed-header">
   <!-- Rotating text container -->
   <div class="text-container">
     <span>G</span>
@@ -27,9 +33,10 @@
     <span>U</span>
   </div>
 
+
   <!-- Profile icon -->
   <!-- ตั้งค่าให้โปรไฟล์สามารถคลิกได้-->
-  <i class="fas fa-user profile-icon" onclick="openModal()"></i>
+  <i class="fas fa-search footer-icon"></i>
 
   <!-- Modal and Form -->
   <div class="modal-overlay" onclick="closeModal()"></div>
@@ -83,11 +90,17 @@
               
     </ul>
   </label>
+</header>
+
 
   <footer>
-    <p>&copy; 2023 GOODGURU.</p>
-</footer>
-  
+    <i class="fas fa-home footer-icon"></i>
+    <i class="fas fa-plus-square footer-icon"></i>
+    <i class="fas fa-user profile footer-icon" onclick="openModal()"></i>
+
+  </footer>
+
   
 </body>
 </html>
+

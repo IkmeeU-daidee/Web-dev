@@ -8,9 +8,7 @@
       place-items: center;
       background-color: #f5f0f0; 
     }
-
-   
-
+    
     .text-container span {
       display: inline-block;
       font-size: 72px;
@@ -176,7 +174,28 @@
       background-color: #d14c4c;
     }    
     
+    .fixed-header {
+      position: fixed;   /* position: fixed; เพื่อทำให้ส่วนหัวคงที่เมื่อเลื่อนหน้าเว็บลงมา */
+      top: 0;
+      width: 100%;
+      background-color: #e0cdcd;
+      color: rgb(195, 159, 159);
+      text-align: center;
+      padding: 5px 0;
+    }
     
-    
-    
+    footer {
+      /* สไตล์ของ Footer */
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #e0cdcd;
+      color: #d14c4c;
+      text-align: center;
+      padding: 1px 0;
+    }
 
+    .footer-icon {
+  font-size: 24px; /* ขนาดของไอคอน */
+  margin-right: 10px; /* ระยะห่างข้างขวาของไอคอน */
+}
