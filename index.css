@@ -104,11 +104,12 @@
 
     .profile-icon {
       position: absolute;
-      top: 10px;
-      right: 10px;
       font-size: 30px;
       color: #c26060;
       cursor: pointer;
+      top: 0px;
+      left: 0px;
+      z-index: 9999;
     }
 
     /* Modal styles */
