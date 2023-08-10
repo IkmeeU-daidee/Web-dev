@@ -102,14 +102,13 @@
       transform: translateX(0);
     }
 
-    .profile-icon {
-      position: absolute;
+    .search-icon {
+      position: fixed;
       font-size: 30px;
       color: #c26060;
       cursor: pointer;
-      top: 0px;
-      left: 0px;
-      z-index: 9999;
+      top: 20px;
+      left: 20px;
     }
 
     /* Modal styles */
@@ -193,7 +192,7 @@
       background-color: #e0cdcd;
       color: #d14c4c;
       text-align: center;
-      padding: 1px 0;
+      padding: 4px 0;
     }
 
     .footer-icon {
