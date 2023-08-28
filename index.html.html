@@ -1,111 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta information -->
-    <meta charset="UTF-8">     <!--กำหนดชุดอักขระ (character set) ที่ใช้ในเอกสาร เช่น UTF-8 ที่สามารถรองรับอักขระทุกภาษา-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   <!--กำหนดการแสดงผลของหน้าเว็บบนอุปกรณ์แบบ responsive โดยค่าเริ่มต้นจะใช้ขนาดเริ่มต้น (initial-scale) ที่ 1.0 และปรับเปลี่ยนความกว้างให้พอดีกับอุปกรณ์ (device-width)-->
-    <meta name="description" content="คำอธิบายเว็บไซต์">   <!--ระบุคำอธิบายสั้น ๆ เกี่ยวกับเว็บไซต์ เว็บเบราว์เซอร์สามารถแสดงข้อความนี้ในผลการค้นหา-->
-    <meta name="keywords" content="คีย์เวิร์ด, เพื่อค้นหา">   <!--ระบุคีย์เวิร์ดที่เกี่ยวข้องกับเว็บไซต์ เป็นข้อมูลที่ไม่ค่อยได้ใช้ในการค้นหาในเว็บเบราว์เซอร์รุ่นใหม่-->
-    <meta name="author" content="Hikmah UDD">   <!--ระบุชื่อผู้เขียนหรือเจ้าของเว็บไซต์-->
-    <meta name="robots" content="index,follow">   <!--ระบุความสามารถของเว็บเบราว์เซอร์และเครื่องมือค้นหาที่จะเข้าถึงเว็บไซต์ (index: เครื่องมือค้นหาสามารถเพิ่มเว็บไซต์ลงในดัชนีได้, follow: เครื่องมือค้นหาสามารถตามลิงก์ภายในเว็บไซต์ได้)-->
-    <meta name="og:title" content="ชื่อเว็บไซต์">   <!--ใช้ในการกำหนดชื่อของเว็บไซต์สำหรับการแชร์บนโซเชียลมีเดีย (Open Graph Protocol)-->
-    <meta name="og:image" content="url_รูปภาพ.jpg">   <!--ใช้ในการกำหนดรูปภาพที่จะแสดงเมื่อเว็บไซต์ถูกแชร์บนโซเชียลมีเดีย (Open Graph Protocol)-->
-    
-    
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="index.css">  <!-- to connect css style-->
 
-  <title>MEENAM</title>
+<head>
 
+  <!-- Meta information -->
+  <meta charset="UTF-8">     <!--กำหนดชุดอักขระ (character set) ที่ใช้ในเอกสาร เช่น UTF-8 ที่สามารถรองรับอักขระทุกภาษา-->
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="คำอธิบายเว็บไซต์">   <!--ระบุคำอธิบายสั้น ๆ เกี่ยวกับเว็บไซต์ เว็บเบราว์เซอร์สามารถแสดงข้อความนี้ในผลการค้นหา-->
+  <meta name="keywords" content="คีย์เวิร์ด, เพื่อค้นหา">   <!--ระบุคีย์เวิร์ดที่เกี่ยวข้องกับเว็บไซต์ เป็นข้อมูลที่ไม่ค่อยได้ใช้ในการค้นหาในเว็บเบราว์เซอร์รุ่นใหม่-->
+  <meta name="author" content="Hikmah UDD">   <!--ระบุชื่อผู้เขียนหรือเจ้าของเว็บไซต์-->
+  <meta name="robots" content="index,follow">   <!--ระบุความสามารถของเว็บเบราว์เซอร์และเครื่องมือค้นหาที่จะเข้าถึงเว็บไซต์ (index: เครื่องมือค้นหาสามารถเพิ่มเว็บไซต์ลงในดัชนีได้, follow: เครื่องมือค้นหาสามารถตามลิงก์ภายในเว็บไซต์ได้)-->
+  <meta name="og:title" content="ชื่อเว็บไซต์">   <!--ใช้ในการกำหนดชื่อของเว็บไซต์สำหรับการแชร์บนโซเชียลมีเดีย (Open Graph Protocol)-->
+  <meta name="og:image" content="url_รูปภาพ.jpg">   <!--ใช้ในการกำหนดรูปภาพที่จะแสดงเมื่อเว็บไซต์ถูกแชร์บนโซเชียลมีเดีย (Open Graph Protocol)-->
+  
+  <title>Meenam Gallery - Index</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+
+  <!-- Font Awesome icons (free version)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Connect CSS -->
+  <link rel="stylesheet" href="main.css">  <!-- to connect css style-->
+  
+  
+  <!-- =======================================================
+  * Template Name: PhotoFolio
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-
 <body>
-  <header class="fixed-header">
-    <!-- Rotating text container -->
-  <div class="text-container">
-    <span>M</span>
-    <span>E</span>
-    <span>E</span>
-    <span>N</span>
-    <span>A</span>
-    <span>M</span>
-  
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <i class="bi bi-camera"></i>
+        <h1>Meenam Gallery</h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="gallery.html">Nature</a></li>
+              <li><a href="gallery.html">People</a></li>
+              <li><a href="gallery.html">Architecture</a></li>
+              <li><a href="gallery.html">Animals</a></li>
+              <li><a href="gallery.html">Sports</a></li>
+              <li><a href="gallery.html">Travel</a></li>
+              <li><a href="gallery.html">Foods</a></li>
+              <li class="dropdown"><a href="#"><span>Sub Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Menu 1</a></li>
+                  <li><a href="#">Menu 2</a></li>
+                  <li><a href="#">Menu 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-delay="1500">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-center">
+          <h2>I'm <span>Jenny Wilson</span> a Professional Photographer from New York City</h2>
+          <p>Blanditiis praesentium aliquam illum tempore incidunt debitis dolorem magni est deserunt sed qui libero. Qui voluptas amet.</p>
+          <a href="contact.html" class="btn-get-started">Available for hire</a>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main" data-aos="fade" data-aos-delay="1500">
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container-fluid">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-1.jpg" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-2.jpg" title="Gallery 2" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-3.jpg" title="Gallery 3" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-4.jpg" title="Gallery 4" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-5.jpg" title="Gallery 5" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-6.jpg" title="Gallery 6" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-7.jpg" title="Gallery 7" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-8.jpg" title="Gallery 8" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-9.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-9.jpg" title="Gallery 9" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-10.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-10.jpg" title="Gallery 10" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-11.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-11.jpg" title="Gallery 11" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-12.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-12.jpg" title="Gallery 12" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-13.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-13.jpg" title="Gallery 13" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-14.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-14.jpg" title="Gallery 14" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-15.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-15.jpg" title="Gallery 15" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-16.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-16.jpg" title="Gallery 16" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>MeenamGallerry</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader">
+    <div class="line"></div>
   </div>
 
-  <footer>
-    <i class="fas fa-home footer-icon"></i>
-    <i class="fas fa-search footer-icon"></i>
-    <i class="fas fa-plus-square footer-icon"></i>
-    <i class="fa fa-bell footer-icon"></i>
-    <!-- Profile icon -->
-  <!-- ตั้งค่าให้โปรไฟล์สามารถคลิกได้-->
-    <i class="fas fa-user profile footer-icon" onclick="openModal()"></i>
-
-
-  </footer>
-
-
-
-  <!-- Modal and Form -->
-  <div class="modal-overlay" onclick="closeModal()"></div>
-  <div class="modal">
-    <h3>User Profile</h3>
-    <form>
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <button type="submit">Login</button>
-    </form>
-  </div>
-
-  <script>
-    // Function to open the modal
-    function openModal() {
-      document.querySelector(".modal-overlay").style.display = "block";
-      document.querySelector(".modal").style.display = "block";
-    }
-
-    // Function to close the modal
-    function closeModal() {
-      document.querySelector(".modal-overlay").style.display = "none";
-      document.querySelector(".modal").style.display = "none";
-    }
-  </script>
-
-  <!-- Hamburger menu toggle -->
-  <label class="hamburger">
-    <input type="checkbox">
-    <svg viewBox="0 0 32 32">
-      <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
-      <path class="line" d="M7 16 27 16"></path>
-    </svg>
-    <ul class="menu-options">
-      <!-- Menu options -->
-      <li><span>หมวดหมู่</span></li>
-            <ul class="content">
-              <li><a href="/feed/foryou?region=th">สำหรับคุณ</a></li>
-              <li><a href="/feed/beauty?region=th">บิวตี้</a></li>
-              <li><a href="/feed/fashion?region=th">แฟชั่น</a></li>
-              <li><a href="/feed/food?region=th">อาหาร</a></li>
-              <li><a href="/feed/undefined?region=th">สกินแคร์</a></li>
-              <li><a href="/feed/lifestyle?region=th">การตกเเต่งบ้าน</a></li>
-              <li><a href="/feed/travel?region=th">การท่องเที่ยว</a></li>
-              <li><a href="/feed/health?region=th">สุขภาพ</a></li>
-              <li><a href="/feed/undefined?region=th">ถ่ายรูป</a></li>
-              <li><a href="/feed/undefined?region=th">การพัฒนาตน</a></li>
-              <li><a href="/feed/pet?region=th">สัตว์เลี้ยง</a></li></ul</li>
-              
-    </ul>
-  </label>
-</header>
-
-
-  
-
-  
 </body>
-</html>
 
+</html>
